@@ -1,42 +1,38 @@
 # Database di auto usate
 
 
-modello
-manifatturiero
-targa
-prima-immatricolazione
-potenza
-proprietarii-precedenti
-anno-produzione
-chilometraggio
-classe-veicolo
-numero-sedili
-colore
-pneumatici
-motore-originale
-cilindrata
-consumi
-classe-emissioni
-emissioni-co2
-paese-origine
-numero-chiavi
-incidentata-e-riparata
-uso-commerciale
-tipologia-IVA
-validità-revisione
-numero-inventario
-portiere
-prezzo
-stato
-alimentazione
-cambio
-provincia
-prezzo-rateizzazione
-periodo-rateizzazione
-immagini
-extra (array)
-sistema-multimediale (array)
-comfort (array)
-luci (array)
-sicurezza (array)
-informazioni-aggiuntive (array)
+modello | SMALLTEXT | NOTNULL
+manifatturiero | SMALLTEXT | NULL
+targa | VARCHAR(7) | NOTNULL
+prima-immatricolazione | DATE | NULL
+proprietarii-precedenti | SMALLINT | NULL
+anno-produzione | YEAR | NULL
+chilometraggio | INT | NULL
+classe-veicolo | SMALLTEXT | NOTNULL
+numero-sedili | SMALLINT | NULL
+colore | SMALLTEXT | NULL
+tipo-pneumatici | SMALLTEXT | NULL
+motore-originale | TINYINT | NULL
+cilindrata | SMALLINT | NULL
+consumi-CITTà | FLOAT(2,1) | NULL
+consumi-COMBINATO | FLOAT(2,1) | NULL
+consumi-FUORI-CITTà | FLOAT(2,1) | NULL
+classe-emissioni | TEXT | NULL
+emissioni-co2 | SMALLTEXT | NULL
+paese-origine | TEXT | NULL
+numero-chiavi | SMALLINT | NULL
+incidentata-e-riparata | TINYINT | NULL
+uso-commerciale | TINYINT | NULL
+tipologia-IVA | TEXT | NULL
+validità-revisione | DATE | NULL
+numero-inventario | VARCHAR(8) | NULL
+portiere | SMALLINT | NULL
+prezzo | DECIMAL(8,2) | NULL
+stato | SMALLTEXT | NULL
+alimentazione | SMALLTEXT | NULL
+cambio | TEXT | NULL
+provincia | TEXT | NULL
+prezzo-rateizzazione | SMALLINT | NULL
+periodo-rateizzazione | SMALLINT | NULL
+immagini | TEXT | NULL
+informazioni-aggiuntive | TEXT | NULL
